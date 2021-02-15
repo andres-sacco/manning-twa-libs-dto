@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.twa.flights.common</groupId>
+		<artifactId>flights-parent</artifactId>
+		<version>1.0.4</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>flights-common-dto</artifactId>
+	<version>1.0.4</version>
+
+	<properties>
+		<main.basedir>${project.basedir}</main.basedir>
+
+		<!-- General -->
+		<jackson-annotations.version>2.12.1</jackson-annotations.version>
+
+		<!-- Tests -->
+		<junit-jupiter.version>5.7.0</junit-jupiter.version>
+		<mockito-junit-jupiter.version>3.7.7</mockito-junit-jupiter.version>
+
+		<!-- Artifactory -->
+		<bintray.package>flights-common-dto</bintray.package>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson-annotations.version}</version>
+		</dependency>
+
+		<!-- Tests -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<version>${mockito-junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>
