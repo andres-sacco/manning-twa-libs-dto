@@ -1,0 +1,16 @@
+language: java
+sudo: true
+
+cache:
+  directories:
+    - "$HOME/.m2"
+    - "$HOME/.sonar"
+
+before_cache:
+  - rm -rf $HOME/.m2/repository/com/twa/flights
+
+script:
+  - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+
+jdk: 
+  - openjdk11

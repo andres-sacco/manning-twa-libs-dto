@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 public abstract class FlightsDTOAbstractTest<T> {
 
     @Test
-    public void settersAndGettersOk() {
+    protected void settersAndGettersOk() {
         T objectToCheck = buildObjectWithSetters();
         assertAttributes(objectToCheck);
     }
 
     @Test
-    public void equalsOk() {
+    protected void equalsOk() {
         T anObject = buildObjectWithSetters();
         T anotherObject = buildObjectWithSetters();
 
@@ -24,7 +24,7 @@ public abstract class FlightsDTOAbstractTest<T> {
     }
 
     @Test
-    public void notEqualsOk() {
+    protected void notEqualsOk() {
         T anObject = buildObjectWithSetters();
         T notEqualsObject = buildNotEqualsObject();
 
@@ -32,7 +32,7 @@ public abstract class FlightsDTOAbstractTest<T> {
     }
 
     @Test
-    public void hashCodeOk() {
+    protected void hashCodeOk() {
         T anObject = buildObjectWithSetters();
         T anotherObject = buildObjectWithSetters();
 
@@ -44,11 +44,11 @@ public abstract class FlightsDTOAbstractTest<T> {
         assertEquals(expectedToString(), buildObjectWithSetters().toString());
     }
 
-    public abstract T buildObjectWithSetters();
+    protected abstract T buildObjectWithSetters();
 
-    public abstract T buildNotEqualsObject();
+    protected abstract T buildNotEqualsObject();
 
-    public abstract void assertAttributes(T objectToCheck);
+    protected abstract void assertAttributes(T objectToCheck);
 
-    public abstract String expectedToString();
+    protected abstract String expectedToString();
 }
