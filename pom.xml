@@ -21,9 +21,6 @@
 		<junit-jupiter.version>5.7.0</junit-jupiter.version>
 		<mockito-junit-jupiter.version>3.7.7</mockito-junit-jupiter.version>
 
-		<!-- Artifactory -->
-		<bintray.package>flights-common-dto</bintray.package>
-
 		<!-- Sonar -->
 		<sonar.projectKey>andres-sacco_manning-twa-libs-dto</sonar.projectKey>
 		<sonar.organization>adschosen-github</sonar.organization>
@@ -88,8 +85,14 @@
 	</build>
 
 	<repositories>
+		<repository>
+			<id>maven2</id>
+			<name>maven2</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
 	    <repository>
 	        <id>central</id>
+	        <name>a0lx370ow2mnw-artifactory-primary-0-releases</name>
 	        <url>https://manning.jfrog.io/artifactory/manning-twa</url>
 	    </repository>
 	</repositories>
