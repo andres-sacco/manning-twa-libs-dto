@@ -85,15 +85,15 @@
 	</build>
 
 	<repositories>
-	    <repository>
-	        <id>central</id>
-	        <name>a0hg2ch1gdiff-artifactory-primary-0-releases</name>
-	        <url>https://manningtwaapi.jfrog.io/artifactory/manning-twa-libs-release-local</url>
-	    </repository>
-		<repository>
-			<id>maven2</id>
-			<name>maven2</name>
-			<url>https://repo.maven.apache.org/maven2</url>
-		</repository> 
+	  <repository>
+		<id>maven2</id>
+		<name>maven2</name>
+		<url>https://repo.maven.apache.org/maven2</url>
+	   </repository> 
+	   <repository>
+	     <id>manning-twa-lib-parent</id>
+	     <name>Repository of parent pom</name>
+	     <url>https://mymavenrepo.com/repo/tJqfV65wRD0LL9UcK4CQ</url>
+	   </repository>
 	</repositories>
 </project>
