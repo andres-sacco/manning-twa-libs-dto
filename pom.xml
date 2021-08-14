@@ -15,7 +15,7 @@
 		<main.basedir>${project.basedir}</main.basedir>
 
 		<!-- General -->
-		<jackson-annotations.version>2.12.3</jackson-annotations.version>
+		<jackson-annotations.version>2.12.4</jackson-annotations.version>
 
 		<!-- Tests -->
 		<junit-jupiter.version>5.7.0</junit-jupiter.version>
